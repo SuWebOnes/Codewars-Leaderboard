@@ -30,7 +30,7 @@ input {
 
 button {
   padding: 0.6rem 1rem;
-  background: #95d0ee;
+  background: #1f1cdd;
   color: white;
   border: none;
   border-radius: 6px;
@@ -67,7 +67,7 @@ th, td {
 }
 
 th {
-  background: #66ece9;
+  background: #1f1cdd;
   color: white;
 }
 
@@ -76,7 +76,7 @@ tr:hover {
 }
 
 a {
-  color: #7aede5;
+  color: #1f1cdd;
   text-decoration: none;
 }
 
