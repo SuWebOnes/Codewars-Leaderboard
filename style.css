@@ -1,0 +1,103 @@
+/* ===========================
+   Base Page Styling
+=========================== */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  margin: 2rem;
+  background: #f4f6fa;
+  color: #222;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+/* ===========================
+   Input Controls
+=========================== */
+.controls {
+  margin-bottom: 1.5rem;
+}
+
+input {
+  padding: 0.5rem;
+  width: 250px;
+  margin: 0 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  background: #95d0ee;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+select {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+}
+
+/* ===========================
+   Table Styling
+=========================== */
+table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background: #66ece9;
+  color: white;
+}
+
+tr:hover {
+  background: #f8f8ff;
+}
+
+a {
+  color: #7aede5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.score {
+  font-weight: bold;
+}
+
+/* ===========================
+   Loader & Error Styling
+=========================== */
+#loader {
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+#error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}

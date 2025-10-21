@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Codewars leaderboard</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🏆 Codewars Leaderboard</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  
-</body>
+  <!-- ===============================
+       Page Header
+  ================================== -->
+  <h1>🏆 Codewars Ultimate Leaderboard</h1>
 
-<script src="index.mjs" type="module"></script>
+  <!-- ===============================
+       Controls for user input & options
+  ================================== -->
+  <div class="controls">
+    <label for="username-input">Usernames:</label>
+    <input
+      id="username-input"
+      placeholder="e.g. CodeYourFuture, SallyMcGrath"
+    />
+
+    <button id="show-rankings-btn">Show Rankings</button>
+
+    <!-- Loader indicator while fetching data -->
+    <span id="loader" hidden>🔄 Loading...</span>
+
+    <label for="language-select">Ranking by:</label>
+    <select id="language-select" disabled></select>
+  </div>
+
+  <!-- ===============================
+       Error message placeholder
+  ================================== -->
+  <p id="error-message" role="alert"></p>
+
+  <!-- ===============================
+       Leaderboard Table
+  ================================== -->
+  <table aria-describedby="Leaderboard of Codewars users">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Username</th>
+        <th>Clan</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody id="leaderboard-body">
+      <!-- Populated dynamically -->
+    </tbody>
+  </table>
+
+  <!-- ===============================
+       Import JS modules
+  ================================== -->
+  <script type="module" src="./dom.mjs"></script>
+</body>
 </html>
